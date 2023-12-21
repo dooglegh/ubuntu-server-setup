@@ -47,7 +47,7 @@ echo "Change ssh server settings (root login disabled, custom port no 8577) ..."
 sudo sed -i "s/PermitRootLogin yes/PermitRootLogin no/g" /etc/ssh/sshd_config
 sudo sed -i "s/#Port 22/#Port 22\nPort 8577/g" /etc/ssh/sshd_config
 
-sudo apt install nginx mariadb-client php 
+sudo apt install nginx mariadb-client php mc
 
 # 추가 블록 스토리지 파티션 생성
 # lsblk
