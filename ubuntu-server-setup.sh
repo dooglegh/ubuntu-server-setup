@@ -31,6 +31,10 @@ echo \
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
+echo "Install certbot (https)..."
+sudo snap install --classic certbot
+echo "Install SSL... > sudo certbot --nginx"
+
 echo "Add user (sudoer)..."
 sudo adduser 사용자아이디
 sudo touch /etc/sudoers.d/사용자아이디
